@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    body,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif;
+
+    }
+
+    h1 {
+        background-color: #000080;
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #000080;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px;
+        background-color: #ffffff;
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="https://i.imgur.com/uStRA3S.png" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large ">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>Media</p>
+        </a>
+        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>PHOTOS</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-6 text-center">
+                    <img src="https://i.imgur.com/uStRA3S.png" alt="boy" class="w3-image" width="992" height="250">
+                    <h1 class="w3-jumbo"><span class="w3-hide-small">Ramveer</span>Tanwar</h1>
+                    <h2 class="text-dark">Environmentalist</h2>
+                </div>
+                <div class="col-sm-6 text-center bg-danger" style="padding: 30px;">
+                    <p style="padding: 65px;">Mr. Ramveer Tanwar, who is an Environmentalist, and working a Project
+                        Engineer with Organization TechAir Mart had been passionate about water conservation during his
+                        Student life. During his graduate years, Mr. Tanwar had begun a campaignJalChaupal in
+                        GautamBudhha Nagar district of Uttar Pradesh, urging people to conserve water and to save
+                        natural resources like ponds and lakes. Ramveer got training in Central pollution Control board,
+                        MOEF, Govt. of India.
+
+                        Ramveer also has been appointed district co-coordinator of the 'BhujalSena' initiative by the
+                        government of Uttar Pradesh. This helps reaching out to larger numbers of peoples.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h1 class="text-center text-white">Media</h1>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="http://ecologicalconcepts.in/wp-content/uploads/2019/05/media2-04.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Man from UP to help save Bengaluru’s Hosakote Lake</h5>
+                        <p class="card-text">25-yr-old, who was instrumental in reviving dozens of lakes,inspires
+                            residents to revive landmark water body</p>
+                        <p class="card-text"><small class="text-muted"><a href="#">READ MORE</a></small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top"
+                        src="http://ecologicalconcepts.in/wp-content/uploads/2019/05/media_2-04.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title  text-primary">Old Engineer Ramveer Tanwar’s Efforts Revive Many Lakes In
+                            Uttar Pradesh</h5>
+                        <p class="card-text">Ramveer Tanwar has restored ten ponds in the last three years, removing
+                            tonnes of garbage from them</p>
+                        <p class="card-text"><small class="text-muted"><a href="#">READ MORE</a></small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top"
+                        src="http://ecologicalconcepts.in/wp-content/uploads/2019/05/media3-04.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title  text-primary">This Noida Techie Revived 10 Lakes in 5 Years!</h5>
+                        <p class="card-text">Juggling his job in an MNC, this hardworking farmer’s son utilises his
+                            after-work hours and weekends to breathe fresh life into Noida’s lakes. The kind of hero
+                            India truly needs!</p>
+                        <p class="card-text"><small class="text-muted"><a href="#">READ MORE</a></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-40 w3-content" id="photos">
+            <h1 class="text-center text-white">Projects</h1>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://new-img.patrika.com/upload/mediafiles/2016/04/30/l_alwar-1461979235_835x547.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Man from UP to help save Bengaluru’s Hosakote Lake</h5>
+                        <p class="card-text text-dark">25-yr-old, who was instrumental in reviving dozens of
+                            lakes,inspires
+                            residents to revive landmark water body</p>
+                        <p class="card-text"><small class="text-muted"><a href="#">READ MORE</a></small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top"
+                        src="http://ecologicalconcepts.in/wp-content/uploads/2019/05/media_2-04.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title  text-primary">Old Engineer Ramveer Tanwar’s Efforts Revive Many Lakes In
+                            Uttar Pradesh</h5>
+                        <p class="card-text text-dark">Ramveer Tanwar has restored ten ponds in the last three years,
+                            removing
+                            tonnes of garbage from them</p>
+                        <p class="card-text"><small class="text-muted"><a href="#">READ MORE</a></small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top"
+                        src="http://ecologicalconcepts.in/wp-content/uploads/2019/05/media_2-04.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title  text-primary">Old Engineer Ramveer Tanwar’s Efforts Revive Many Lakes In
+                            Uttar Pradesh</h5>
+                        <p class="card-text text-dark">Ramveer Tanwar has restored ten ponds in the last three years,
+                            removing
+                            tonnes of garbage from them</p>
+                        <p class="card-text"><small class="text-muted"><a href="#">READ MORE</a></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h1 class="w3-text-light-grey text-center">Contact Me</h1>
+            <div class="container">
+                <div class="row text-dark" style="background-color: bisque;">
+                    <div class="col-md-6" style="padding: 20px;">
+                        <div class="w3-section">
+                            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago,
+                                US</p>
+                            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00
+                                151515</p>
+                            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
+                                mail@mail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="padding: 20px;>
+                        <form action="/action_page.php" target="_blank">
+                            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required
+                                    name="Name"></p>
+                            <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required
+                                    name="Email"></p>
+                            <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required
+                                    name="Subject"></p>
+                            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required
+                                    name="Message"></p>
+                            <p>
+                                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-text-grey w3-xlarge text-center">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <!-- End footer -->
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+
+</html>
