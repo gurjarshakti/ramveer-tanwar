@@ -39,6 +39,22 @@
         background-color: #ffffff;
     }
 
+    .gal-item {
+        overflow: hidden;
+        padding: 8px;
+    }
+
+    .gal-item .box {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .box img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {
         #main {
@@ -48,6 +64,9 @@
 </style>
 
 <body class="w3-black">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3">
+    </script>
 
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -63,7 +82,11 @@
         </a>
         <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-eye w3-xxlarge"></i>
-            <p>PHOTOS</p>
+            <p>Gallrey</p>
+        </a>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-product-hunt w3-xxlarge"></i>
+            <p>Projects</p>
         </a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-envelope w3-xxlarge"></i>
@@ -92,15 +115,15 @@
                     <h2 class="text-dark">Environmentalist</h2>
                 </div>
                 <div class="col-sm-6 text-center bg-danger" style="padding: 30px;">
-                    <p style="padding: 65px;">Mr. Ramveer Tanwar, who is an Environmentalist, and working a Project
-                        Engineer with Organization TechAir Mart had been passionate about water conservation during his
-                        Student life. During his graduate years, Mr. Tanwar had begun a campaignJalChaupal in
-                        GautamBudhha Nagar district of Uttar Pradesh, urging people to conserve water and to save
-                        natural resources like ponds and lakes. Ramveer got training in Central pollution Control board,
-                        MOEF, Govt. of India.
-
-                        Ramveer also has been appointed district co-coordinator of the 'BhujalSena' initiative by the
-                        government of Uttar Pradesh. This helps reaching out to larger numbers of peoples.</p>
+                    <p style="padding: 65px;">Mr. Ramveer Tanwar, who is an Environmentalist had been passionate about
+                        water conservation during his Student life. During his graduate years, Mr. Tanwar had begun a
+                        campaign Jal Chaupal in Gautam Buddha Nagar district of Uttar Pradesh, urging people to conserve
+                        water and to save natural resources like ponds and lakes. Ramveer got training in Central
+                        pollution Control board, MOEF, Govt. of India.
+                        For conservation of Groundwater, Ramveer Tanwar started the cleaning and rejuvenation process of
+                        the lakes and ponds. Since 2014, Mr. Tanwar and team has restored more than12 ponds/lakes in
+                        Uttar Pradesh and also now guiding the peoples in all over India for doing same.
+                        Right now He is working in association with Different Corporate and NGOs.</p>
                 </div>
 
             </div>
@@ -148,30 +171,85 @@
             </div>
         </div>
 
-        <!-- Portfolio Section -->
+        <!-- Photos Section -->
         <div class="w3-padding-40 w3-content" id="photos">
+            <div class="container-fluid">
+                <header class="text-center">
+                    <h1>Photos</h1>
+                </header>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/image_1.png" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/image_2.png" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/image_3.png" alt="Card image cap">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/image_4.png" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/image_5.png" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="img/image_6.png" alt="Card image cap">
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="w3-padding-40 w3-content" id="projects">
             <h1 class="text-center text-white">Projects</h1>
             <div class="card-deck">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Jal Chaupal                        </h5>
-                        <p class="card-text text-dark">This is an Awareness campaign called Jal Chaupal to discuss water conservation in villages, Schools, Colleges. Issues such as garbage disposal and lake encroachments are discussed in these gatherings.</p>
+                        <h5 class="card-title text-primary">Jal Chaupal </h5>
+                        <p class="card-text text-dark">This is an Awareness campaign called Jal Chaupal to discuss water
+                            conservation in villages, Schools, Colleges. Issues such as garbage disposal and lake
+                            encroachments are discussed in these gatherings.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title  text-primary">Project Jal</h5>
-                        <p class="card-text text-dark">Project Jal works for water conservation and management, rainwater harvesting and rejuvenates and create new water bodies PAN India in Expertise of Environmentalist Ramveer Tanwar. Our objective is to conserve and maintain the hydrological cycle of India and rejuvenate depleting water table.  Project Jal is joint nonprofit initiative of Green Yatra, Ramveer Tanwar and SayTrees.</p>
+                        <p class="card-text text-dark">Project Jal works for water conservation and management,
+                            rainwater harvesting and rejuvenates and create new water bodies PAN India in Expertise of
+                            Environmentalist Ramveer Tanwar. Our objective is to conserve and maintain the hydrological
+                            cycle of India and rejuvenate depleting water table. Project Jal is joint nonprofit
+                            initiative of Green Yatra, Ramveer Tanwar and SayTrees.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title  text-primary">#SelfieWithPond</h5>
-                        <p class="card-text text-dark">We started #SelfieWithPond online campaign to connect the youngsters and people to their nearby water bodies. So peoples can discuss about dying water bodies and can be motivated to ponds/lakes.We connected with 100,000 youths from Pan India as well as 9 other countries.</p>
+                        <p class="card-text text-dark">We started #SelfieWithPond online campaign to connect the
+                            youngsters and people to their nearby water bodies. So peoples can discuss about dying water
+                            bodies and can be motivated to ponds/lakes.We connected with 100,000 youths from Pan India
+                            as well as 9 other countries.</p>
                     </div>
                 </div>
             </div>
         </div>
+
 
         <!-- Contact Section -->
         <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -180,43 +258,45 @@
                 <div class="row text-dark" style="background-color: bisque;">
                     <div class="col-md-6" style="padding: 20px;">
                         <div class="w3-section">
-                            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Greater Noida,Delhi NCR, India</p>
-                            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91-9312989938</p>
-                            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ramveertanwarg@gmail.com
+                            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Adress:
+                                110,Dadha, Greater Noida, GB Nagar UP</p>
+                            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone:
+                                +91-9312989938</p>
+                            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
+                                ramveertanwarg@gmail.com
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6" style="padding: 20px;>
-                        <form action="/action_page.php" target="_blank">
-                            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required
-                                    name="Name"></p>
-                            <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required
-                                    name="Email"></p>
-                            <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required
-                                    name="Subject"></p>
-                            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required
-                                    name="Message"></p>
-                            <p>
-                                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-                                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                                </button>
-                            </p>
-                        </form>
+                    <div class="col-md-6" style="padding: 20px;">
+                        <iframe
+                            src="
+                        https://docs.google.com/forms/d/e/1FAIpQLSc2uWwif0x0drzhML0ML5SKTxyhW8U6YBgILfRWP1J5GMcdSw/viewform?embedded=true"
+                            width="400" height="400" frameborder="0" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Footer -->
-        <footer class="w3-content w3-text-grey w3-xlarge text-center">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-            <!-- End footer -->
-        </footer>
+        <div class="container w3-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="fb-page" data-href="https://www.facebook.com/ramveertanwarji/" data-tabs="timeline"
+                        data-width="600" data-height="400" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/ramveertanwarji/" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/ramveertanwarji/">Ramveer Tanwar</a></blockquote>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a class="twitter-timeline" data-width="600" data-height="400" data-theme="dark"
+                        data-link-color="#FAB81E" href="https://twitter.com/ramveertanwarg?ref_src=twsrc%5Etfw">Tweets
+                        by
+                        ramveertanwarg</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
@@ -228,19 +308,7 @@
         </script>
         <!-- END PAGE CONTENT -->
     </div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5cf799cdb534676f32ad7381/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-<!--End of Tawk.to Script-->
+
 </body>
 
 </html>
